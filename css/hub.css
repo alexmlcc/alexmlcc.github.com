@@ -4,27 +4,33 @@
 
 /*------------------------------------------------------------------
 Table of contents
-0. Fonts
-1. Clearfix
-2. Preloader
-3. Typography
-4. Headings
-5. Navigation
-6. Main Content
-7. Content Elements
-8. Intro Backgrounds
-9. Icons
-10. Images & Hover Animation
-11. Footer
-12. Lists
-13. Blog
-14. Googlemaps
-15. Banner Text and Block Fadein
+1. Fonts
+2. Clearfix
+3. Preloader
+4. Typography
+5. Headings
+6. Navigation
+7. Main Content
+8. Content Elements
+9. Intro Backgrounds
+10. Icons
+11. Images & Hover Animation
+12. Footer
+13. Lists
+14. Blog
+15. Googlemaps
+16. Banner Text and Block Fadein
+17. jQuery FlexSlider v2.0
 -------------------------------------------------------------------*/
 
+/* 1. Fonts
+--------------------------------------------------------------------------------------------------------*/
 
 
-/* 1. Clearfix
+/* End Fonts
+--------------------------------------------------------------------------------------------------------*/
+
+/* 2. Clearfix
 --------------------------------------------------------------------------------------------------------*/
 .clear {
  clear: both;
@@ -87,7 +93,7 @@ Table of contents
 
 
 
-/* 2. Preloader
+/* 3. Preloader
 --------------------------------------------------------------------------------------------------------*/
 #preloader {
  position: fixed;
@@ -152,7 +158,7 @@ Table of contents
 
 
 
-/* 3. Typography
+/* 4. Typography
 --------------------------------------------------------------------------------------------------------*/
 html {
  overflow: -moz-scrollbars-vertical;
@@ -401,7 +407,7 @@ blockquote footer {
 
 
 
-/* 4. Headings
+/* 5. Headings
 --------------------------------------------------------------------------------------------------------*/
 
 h1#logo {
@@ -513,7 +519,7 @@ header .phone-number i.fa {
 
 
 
-/* 5. Navigation
+/* 6. Navigation
 --------------------------------------------------------------------------------------------------------*/
 #menu-button {
  font-size: 14px;
@@ -740,7 +746,7 @@ header .phone-number i.fa {
 
 
 
-/* 6. Main Content
+/* 7. Main Content
 --------------------------------------------------------------------------------------------------------*/
 #header {
  position: absolute;
@@ -813,7 +819,7 @@ section.same-color-as-previous-section {
 
 
 
-/* 7. Content Elements
+/* 8. Content Elements
 --------------------------------------------------------------------------------------------------------*/
 .overflow, .element {
  overflow: hidden;
@@ -1131,7 +1137,7 @@ h3.panel-title {
 
 
 
-/* 8. Intro Backgrounds
+/* 9. Intro Backgrounds
 --------------------------------------------------------------------------------------------------------*/
 .background-image1 {
  background: url(../images/dummy1200.jpg) no-repeat center;
@@ -1355,7 +1361,7 @@ h3.panel-title {
 
 
 
-/* 9. Icons
+/* 10. Icons
 --------------------------------------------------------------------------------------------------------*/
 .social-list {
  padding-bottom: 15px;
@@ -1783,7 +1789,7 @@ header .social-list li {
 /* End Icons
 --------------------------------------------------------------------------------------------------------*/
 
-/* 10. Images & Hover Animation
+/* 11. Images & Hover Animation
 --------------------------------------------------------------------------------------------------------*/
 .images {
  display: block;
@@ -1989,7 +1995,7 @@ a.transition-link img {
 /* End Images & Hover Animation
 --------------------------------------------------------------------------------------------------------*
 
-/* 11. Footer
+/* 12. Footer
 --------------------------------------------------------------------------------------------------------*/
 #footer {
  margin: 0px;
@@ -2051,7 +2057,7 @@ footer i.fa-heart {
 /* End Footer
 --------------------------------------------------------------------------------------------------------*/
 
-/* 12. Lists
+/* 13. Lists
 --------------------------------------------------------------------------------------------------------*/
 ul.unordered-list, .hentry ul, ol {
  list-style: circle;
@@ -2134,7 +2140,7 @@ ul.pagination li a.active:hover {
 /* End Lists
 --------------------------------------------------------------------------------------------------------*/
 
-/* 13. Blog
+/* 14. Blog
 --------------------------------------------------------------------------------------------------------*/
 .avatar {
  margin: 10px 0 20px;
@@ -2178,7 +2184,7 @@ ul.comments {
 /* End Blog
 --------------------------------------------------------------------------------------------------------*/
 
-/* 14. Googlemaps
+/* 15. Googlemaps
 --------------------------------------------------------------------------------------------------------*/
 #map {
  width: 100%;
@@ -2213,7 +2219,7 @@ ul.comments {
 /* End Googlemaps
 --------------------------------------------------------------------------------------------------------*/
 
-/* 15. Banner Text and Block Fadein
+/* 16. Banner Text and Block Fadein
 --------------------------------------------------------------------------------------------------------*/
 .banner-textblock {
  position: relative;
@@ -2284,3 +2290,74 @@ ul.comments {
 }
 /* End Banner Text and Block Fadein
 --------------------------------------------------------------------------------------------------------*/
+
+/* 17. Start jQuery FlexSlider v2.0
+*********************************/ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0; }
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { position:relative; }
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0; z-index:20;}
+.flex-direction-nav a { margin: 0px 0 0; z-index:20; display: block; position: absolute; top: 50%; margin-top:-37px; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all 0.2s  ease-in-out 0s; -moz-transition: all 0.2s  ease-in-out 0s; -o-transition: all 0.2s  ease-in-out 0s; transition: all 0.2s  ease-in-out 0s; display:inline-block; width:54px; height:74px;}
+
+.flex-direction-nav .flex-next {background:url(../images/bg-next.png) center no-repeat #fff; background-size:24px 24px; right: 35px; border: 0; }
+.flex-direction-nav .flex-prev {background:url(../images/bg-prev.png) center no-repeat #fff; background-size:24px 24px; left: 35px; border: 0; }
+
+.flexslider .flex-next {opacity: 1; }
+.flexslider .flex-prev {opacity: 1; }
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center; display:none !important;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+
+
+
+
+.flexslider.testimonials .flex-direction-nav .flex-next, .flexslider.testimonials .flex-direction-nav .flex-prev { display:none;  }
+
+/* End jQuery FlexSlider v2.0
+*********************************/ 
