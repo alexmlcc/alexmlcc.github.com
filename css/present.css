@@ -1,11 +1,16 @@
 @charset "utf-8";
+
 /* CSS Document */
+
 /*------------------------------------------------------------------
-[Table of contents]
+
+Table of contents
+
 1. Large devices (large desktops, 1200px and up):
 2. Medium devices (desktops, 992px and up):
 3. Small devices (tablets, 768px and up):
 4. Extra small devices (phones, up to 480px):
+
 -------------------------------------------------------------------*/
 /*Large devices (large desktops, 1200px and up):*/
 @media only screen and (max-width: 1200px) {
