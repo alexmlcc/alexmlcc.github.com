@@ -3,7 +3,7 @@
 
 /*------------------------------------------------------------------
 [Table of contents]
-0. Fonts
+
 1. Clearfix
 2. Preloader
 3. Typography
@@ -17,13 +17,12 @@
 11. Footer
 12. Lists
 13. Blog
-14. Googlemaps
-15. Banner Text and Block Fadein
+14. Banner Text and Block Fadein
 -------------------------------------------------------------------*/
 
 
 
-/* =1. Clearfix
+/* 1. Clearfix
 --------------------------------------------------------------------------------------------------------*/
 .clear {
  clear: both;
@@ -86,7 +85,7 @@
 
 
 
-/* =2. Preloader
+/* 2. Preloader
 --------------------------------------------------------------------------------------------------------*/
 #preloader {
  position: fixed;
@@ -151,7 +150,7 @@
 
 
 
-/* =3. Typography
+/* 3. Typography
 --------------------------------------------------------------------------------------------------------*/
 html {
  overflow: -moz-scrollbars-vertical;
@@ -400,7 +399,7 @@ blockquote footer {
 
 
 
-/* =4. Headings
+/* 4. Headings
 --------------------------------------------------------------------------------------------------------*/
 
 h1#logoml {
@@ -512,7 +511,7 @@ header .phone-number i.fa {
 
 
 
-/* =5. Navigation
+/* 5. Navigation
 --------------------------------------------------------------------------------------------------------*/
 #menu-button {
  font-size: 14px;
@@ -739,7 +738,7 @@ header .phone-number i.fa {
 
 
 
-/* =6. Main Content
+/* 6. Main Content
 --------------------------------------------------------------------------------------------------------*/
 #header {
  position: absolute;
@@ -807,12 +806,12 @@ section.same-color-as-previous-section {
  left: 0;
  top: 0;
 }
-/* =End Main Content
+/* End Main Content
 --------------------------------------------------------------------------------------------------------*/
 
 
 
-/* =7. Content Elements
+/* 7. Content Elements
 --------------------------------------------------------------------------------------------------------*/
 .overflow, .element {
  overflow: hidden;
@@ -1125,12 +1124,12 @@ h3.panel-title {
 .panel-group .panel + .panel {
  margin-top: 0;
 }
-/* =End Content Elements
+/* End Content Elements
 --------------------------------------------------------------------------------------------------------*/
 
 
 
-/* =8. Intro Backgrounds
+/* 8. Intro Backgrounds
 --------------------------------------------------------------------------------------------------------*/
 
 
@@ -1181,12 +1180,12 @@ h3.panel-title {
 .touch .fixed {
  position: absolute;
 }
-/* =End Intro Backgrounds
+/* End Intro Backgrounds
 --------------------------------------------------------------------------------------------------------*/
 
 
 
-/* =9. Icons
+/* 9. Icons
 --------------------------------------------------------------------------------------------------------*/
 .social-list {
  padding-bottom: 15px;
@@ -1616,7 +1615,7 @@ header .social-list li {
 
 
 
-/* =10. Images & Hover Animation
+/* 10. Images & Hover Animation
 --------------------------------------------------------------------------------------------------------*/
 .images {
  display: block;
@@ -1824,7 +1823,7 @@ a.transition-link img {
 
 
 
-/* =11. Footer
+/* 11. Footer
 --------------------------------------------------------------------------------------------------------*/
 #footer {
  margin: 0px;
@@ -1968,12 +1967,12 @@ ul.pagination li a.active:hover {
  background: none !important;
  cursor: default;
 }
-/* =End Lists
+/* End Lists
 --------------------------------------------------------------------------------------------------------*/
 
 
 
-/* =13. Blog
+/* 13. Blog
 --------------------------------------------------------------------------------------------------------*/
 .avatar {
  margin: 10px 0 20px;
@@ -2018,45 +2017,7 @@ ul.comments {
 --------------------------------------------------------------------------------------------------------*/
 
 
-
-/* =14. Googlemaps
---------------------------------------------------------------------------------------------------------*/
-#map {
- width: 100%;
- height: 85%;
- margin: 0;
- border: 0;
- margin-top: -10%;
-}
-#map:before, #map:after {
- background: none;
- content: '';
- left: 0;
- position: absolute;
- top: 0;
- width: 100%;
-}
-#map:after {
- bottom: 0;
- top: auto;
-}
-.contact-map-overlay {
- display: block;
- position: absolute;
- top: 0;
- background: #85a438 !important;
- width: 100%;
- height: 100%;
- -webkit-transition: all 0.2s ease 0.0s;
- transition: all 0.2s ease 0.0s;
- opacity: 0.6;
-}
-/* End Googlemaps
---------------------------------------------------------------------------------------------------------*/
-
-
-
-/* =15. Banner Text and Block Fadein
+/* 14. Banner Text and Block Fadein
 --------------------------------------------------------------------------------------------------------*/
 .banner-textblock {
  position: relative;
